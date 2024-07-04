@@ -1,0 +1,165 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+#Home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/events-heavenly-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: white;
+  position: relative;
+}
+.HomeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+}
+
+
+#leftMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 20px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: white;
+}
+
+#Home h2 {
+  margin-top: 200px;
+}
+
+#Home h2, p {
+  text-align: center;
+}
+
+.sidenav {
+  background-color: #414658;
+}
+
+.sidenav a:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+
+
+
+#home-content {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#home-content h2 {
+  font-size: 60px;
+}
+.close{
+  position: relative;
+  left: 200px;
+  top:5px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+.close:hover{
+  color: red;
+}
+.open{
+  font-size: 40px;
+  cursor: pointer;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:900px){
+  
+  #home-content h2{
+    font-size: 25px;
+  }
+  .open{
+    font-size: 25px;
+  }
+  
+}
+
+.item h3 {
+  background-color: rgba(200, 0, 0, 0.4);
+  padding: 5px;
+  margin-bottom: 0px;
+  color: #fff;
+  cursor: pointer;
+}
+.item > div {
+  background-color: #ccc;
+  margin: 0;
+  padding: 10px;
+  display: none;
+}
+.item .first {
+  display: block;
+}
+#count {
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  height: 330px;
+}
+.count-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+  color: white;
+}
+.tim {
+  padding: 50px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 30px;
+}
+.social-list i {
+  border: 1px solid #ccc;
+  padding: 15px 20px 10px 20px;
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  float: left;
+  transition: all 0.3s ease-in-out;
+}
+.social-list i:hover {
+  background-color: #e55;
+  color: #fff;
+}
+textarea {
+  min-height: 150px;
+  max-height: 200px;
+}
